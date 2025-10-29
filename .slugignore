@@ -27,3 +27,18 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
+
+# Exclude pip cache and build artifacts
+*.egg-info/
+dist/
+build/
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Exclude unnecessary documentation and tests from installed packages
+*.dist-info/doc/
+*.dist-info/tests/
+*/tests/
+*/test/
+*/__pycache__/
