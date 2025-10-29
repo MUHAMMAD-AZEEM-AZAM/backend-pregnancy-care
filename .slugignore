@@ -10,35 +10,52 @@ deployment-checklist.sh
 .replit
 pyproject.toml
 poetry.lock
+Dockerfile
+.dockerignore
+heroku.yml
+.buildpacks
+Aptfile
 
 # Exclude development files
 .vscode/
 .idea/
 *.md
 README.md
+LICENSE
 
 # Exclude git
 .git/
 .gitignore
+.gitattributes
 
-# Exclude Python cache (extra safety)
+# Exclude Python cache and build artifacts
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .Python
-
-# Exclude pip cache and build artifacts
 *.egg-info/
 dist/
 build/
 *.egg
+
+# Exclude pip cache
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Exclude unnecessary documentation and tests from installed packages
+# Exclude documentation and tests from installed packages
 *.dist-info/doc/
+*.dist-info/docs/
 *.dist-info/tests/
+*.dist-info/test/
 */tests/
 */test/
 */__pycache__/
+*/docs/
+*/examples/
+*/benchmarks/
+
+# Exclude large unnecessary files from packages
+*.whl
+*.tar.gz
+*.so.debug
