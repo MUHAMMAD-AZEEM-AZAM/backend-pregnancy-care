@@ -19,7 +19,7 @@ app = FastAPI(title="CareBloom - AI-Powered Pregnancy Risk Assessment API")
 # ===========================
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://carebloom-gamma.vercel.app/","http://localhost:3000", "http://localhost:3001"],  # React dev server
+    allow_origins=["*"],  # Allow all origins for Replit deployment
     allow_credentials=True,
     allow_methods=["*"],  # Allow all methods including OPTIONS
     allow_headers=["*"],  # Allow all headers
