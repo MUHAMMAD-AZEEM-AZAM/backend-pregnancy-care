@@ -1,0 +1,29 @@
+# Exclude test files and examples
+test_*.py
+test_examples/
+tests/
+
+# Exclude deployment documentation
+REPLIT_DEPLOYMENT.md
+QUICK_START.md
+deployment-checklist.sh
+.replit
+pyproject.toml
+poetry.lock
+
+# Exclude development files
+.vscode/
+.idea/
+*.md
+README.md
+
+# Exclude git
+.git/
+.gitignore
+
+# Exclude Python cache (extra safety)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
